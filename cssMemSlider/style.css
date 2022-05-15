@@ -136,3 +136,43 @@ a {
 #slides .image {
 	transition: all 1s ease;
 }
+
+
+@media screen and (max-width: 768px){
+	article p {
+		padding-top: 60px;
+	}
+	#active{
+		bottom: -35%;
+    left: 40%;
+    right: 40%;
+		/* transform: translate(); */
+		/* left: 50%; */
+		/* margin-left: -50%; */
+		/* transform:translate(-50%, -50%);  */
+	}
+}
+@media screen and (max-width: 690px){
+	#active{
+		bottom: -25%;
+	}
+}
+@media screen and (max-width: 580px){
+	#active{
+		bottom: -15%;
+		left: 35%;
+    right: 35%;
+	}
+}
+@media screen and (max-width: 450px){
+	#active{
+		bottom: -5%;
+		left: 32%;
+    right: 32%;
+	}
+}
+@media screen and (max-width: 375px){
+	#active{
+		bottom: 0;
+	}
+}
