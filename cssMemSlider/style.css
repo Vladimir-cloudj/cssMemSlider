@@ -1,0 +1,138 @@
+/* *{
+	padding: 0;
+	margin: 0;
+} */
+.wrapper {
+	background: #0f222a;
+	height: 480px;
+}
+.all {
+	display: flex;
+	justify-content: center;
+}
+#slider {
+	position: relative;
+	top: 10px;
+	max-width: 1000px;
+}
+#slider {
+	margin: 0 15px;
+	position: relative;
+	height: 100%;
+}
+#slides article {
+	width: 20%;
+	float: left;
+}
+#slides .image {
+	width: 500%;
+	line-height: 0;
+}
+#overflow {
+	width: 100%;
+	overflow: hidden;
+}
+article img {
+	width: 100%;
+}
+article {
+	display: flex;
+	flex-direction: column;
+}
+article p {
+	display: inline;
+	padding-top: 10px;
+	text-align: left;
+	left: 0;
+	color: #bbb;
+}
+#desktop:checked~#slider {
+	padding: 0 auto;
+	max-width: 980px;
+}
+label,
+a {
+	cursor: pointer;
+}
+.all input {
+	display: none;
+}
+#switch1:checked~#slides .image {
+	margin-left: 0;
+}
+#switch2:checked~#slides .image {
+	margin-left: -100%;
+}
+#switch3:checked~#slides .image {
+	margin-left: -200%;
+}
+#switch4:checked~#slides .image {
+	margin-left: -300%;
+}
+#switch5:checked~#slides .image {
+	margin-left: -400%;
+}
+#controls {
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+#active label {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding: 10px 8px;
+}
+.label_div {
+	border-radius: 10px;
+	width: 10px;
+	height: 10px;
+	background-color: #18a3dd;
+	border: 2px solid #18a3dd;
+	transition: all .8s ease;
+}
+#active {
+	position: absolute;
+	right: 0;
+	bottom: -76%;
+	text-align: center;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#active .label_wrap {
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s ease;
+}
+
+#active .label_wrap:hover {
+	/* background: #76f; */
+}
+.label_wrap:hover .label_div {
+	background-color: #fff;
+	border-color: #fff;
+}
+#switch1:checked~#active .label_wrap:nth-child(1) label .label_div,
+#switch2:checked~#active .label_wrap:nth-child(2) label .label_div,
+#switch3:checked~#active .label_wrap:nth-child(3) label .label_div,
+#switch4:checked~#active .label_wrap:nth-child(4) label .label_div,
+#switch5:checked~#active .label_wrap:nth-child(5) label .label_div{
+	border: 2px solid #fff;
+	background: transparent;
+}
+#switch1:checked ~ #active .label_wrap:nth-child(1) label:hover .label_div,
+#switch2:checked ~ #active .label_wrap:nth-child(2) label:hover .label_div,
+#switch3:checked ~ #active .label_wrap:nth-child(3) label:hover .label_div,
+#switch4:checked ~ #active .label_wrap:nth-child(4) label:hover .label_div,
+#switch5:checked ~ #active .label_wrap:nth-child(5) label:hover .label_div {
+  border-color: red;
+}
+#slides .image {
+	transition: all 1s ease;
+}
