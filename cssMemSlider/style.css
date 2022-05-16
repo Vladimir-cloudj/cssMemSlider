@@ -42,9 +42,11 @@ article {
 article p {
 	display: inline;
 	padding-top: 10px;
+	/* padding-top: 1vh; */
 	text-align: left;
 	left: 0;
 	color: #bbb;
+
 }
 #desktop:checked~#slider {
 	padding: 0 auto;
@@ -136,11 +138,17 @@ a {
 #slides .image {
 	transition: all 1s ease;
 }
-
+a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
 
 @media screen and (max-width: 768px){
 	article p {
 		padding-top: 60px;
+		/* padding-top: 1vh; */
 	}
 	#active{
 		bottom: -35%;
@@ -152,6 +160,8 @@ a {
 		/* transform:translate(-50%, -50%);  */
 	}
 }
+
+
 @media screen and (max-width: 690px){
 	#active{
 		bottom: -25%;
