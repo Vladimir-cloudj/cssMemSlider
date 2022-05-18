@@ -12,7 +12,7 @@
 }
 #slider {
 	position: relative;
-	top: 10px;
+	padding-top: 10px;
 	max-width: 1000px;
 }
 #slider {
@@ -56,12 +56,9 @@ article {
 }
 article p {
 	display: inline;
-	/* margin-top: 1%; */
 	margin: -7px 0 16px 0;
 	padding-top: 3%;
-	/* padding-top: 1vh; */
 	text-align: left;
-	left: 0;
 	color: #bbb;
 
 }
@@ -156,7 +153,6 @@ a {
 }
 
 #active .label_wrap:hover {
-	/* background: #76f; */
 }
 .label_wrap:hover .label_div {
 	background-color: #fff;
@@ -211,19 +207,8 @@ a{
 	}
 }
 @media screen and (max-width: 768px){
-	article p {
-		/* padding-top: 60px; */
-		/* padding-top: 1vh; */
-	}
 	#active{
 		margin: 17% 0 0 79%;
-		/* bottom: -35%; */
-    /* left: 40%; */
-    /* right: 40%; */
-		/* transform: translate(); */
-		/* left: 50%; */
-		/* margin-left: -50%; */
-		/* transform:translate(-50%, -50%);  */
 	}
 }
 
@@ -235,7 +220,6 @@ a{
 	}
 	#active{
 		margin: 17% 0 0 77%;
-		/* bottom: -25%; */
 	}
 }
 @media screen and (max-width: 650px){
@@ -244,7 +228,6 @@ a{
 	}
 	#active{
 		margin: 17% 0 0 74%;
-		/* bottom: -25%; */
 	}
 }
 @media screen and (max-width: 580px){
@@ -253,9 +236,6 @@ a{
 	}
 	#active{
 		margin: 17% 0 0 70%;
-		/* bottom: -15%; */
-		/* left: 35%; */
-    /* right: 35%; */
 	}
 }
 @media screen and (max-width: 490px){
@@ -269,20 +249,11 @@ a{
 	#active{
 		margin: 17% auto 0;
 		height: 20px;
-		/* bottom: -15%; */
-		/* left: 35%; */
-    /* right: 35%; */
 	}
-	/* #active .label_wrap{
-		height: 15px;
-	} */
 }
 @media screen and (max-width: 450px){
 	#active{
 		margin: 17% auto 0;
-		/* bottom: -5%; */
-		/* left: 32%; */
-    /* right: 32%; */
 	}
 	article p {
 		text-align: center;
@@ -291,8 +262,7 @@ a{
 }
 @media screen and (max-width: 375px){
 	#active{
-		margin: 17% auto 0;;
-		/* bottom: 0; */
+		margin: 17% auto 0;
 	}
 	article p {
 		text-align: center;
